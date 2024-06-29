@@ -4,57 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Carousel Example</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxc5BViPjMOh+Y6rmHr2tXz16vDwF3v1x2yf/i8AvpD0+mFjS5dus1Ph2+sme+" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-csB+78bL5eIVkm1TaK0qZkfZoN+V7ZbTaRelX+NO9G7j0Tk9zZVc2Y8Va6Sfoen5" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-WakSMHoYF/PJmZRKCf3Zx7WNnqtQUiOf5yoHQbSfYyLmgqOw+VwEFEmiD+0MDdD0" crossorigin="anonymous"></script>
 </head>
 <body>
-  
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item first-slide">
-      <!-- Slide content for first slide -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="item first-slide">
       <img src="slide1.jpg" alt="First Slide">
     </div>
-    <div class="carousel-item second-slide">
-      <!-- Slide content for second slide -->
+    <div class="item second-slide">
       <img src="slide2.jpg" alt="Second Slide">
     </div>
-    <div class="carousel-item third-slide active">
-      <!-- Slide content for third slide -->
+    <div class="item third-slide active">
       <img src="slide3.jpg" alt="Third Slide">
     </div>
-    <div class="carousel-item fourth-slide">
-      <!-- Slide content for fourth slide -->
+    <div class="item fourth-slide">
       <img src="slide4.jpg" alt="Fourth Slide">
     </div>
-    <div class="carousel-item fifth-slide">
-      <!-- Slide content for fifth slide -->
+    <div class="item fifth-slide">
       <img src="slide5.jpg" alt="Fifth Slide">
     </div>
   </div>
 
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev left" href="#myCarousel" role="button" data-slide="prev">
-    <span class="carousel-control glyphicon glyphicon-chevron-left"></span>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
-  <a class="carousel-control-next right" href="#myCarousel" role="button" data-slide="next">
-    <span class="carousel-control glyphicon glyphicon-chevron-right"></span>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
 
