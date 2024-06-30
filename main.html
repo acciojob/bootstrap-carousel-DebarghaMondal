@@ -4,29 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Carousel Example</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxc5BViPjMOh+Y6rmHr2tXz16vDwF3v1x2yf/i8AvpD0+mFjS5dus1Ph2+sme+" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-csB+78bL5eIVkm1TaK0qZkfZoN+V7ZbTaRelX+NO9G7j0Tk9zZVc2Y8Va6Sfoen5" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-WakSMHoYF/PJmZRKCf3Zx7WNnqtQUiOf5yoHQbSfYyLmgqOw+VwEFEmiD+0MDdD0" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Glyphicons (for arrows) -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- Bootstrap JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item first-slide">
-      <img src="slide1.jpg" alt="First Slide">
+    <div class="item active first-slide">
+      <img src="https://media.istockphoto.com/id/1322194555/photo/mount-abu-hill-station-india.webp?b=1&s=170667a&w=0&k=20&c=WD5pZbYngY7A3rNTA064nWAeZm_PzzoyoH51IEGmsNE=" alt="Slide 1">
     </div>
+
     <div class="item second-slide">
-      <img src="slide2.jpg" alt="Second Slide">
+      <img src="https://media.istockphoto.com/id/1061972184/photo/landscape-of-snow-mountains-and-mountain-road-to-nubra-valley-in-leh-ladakh-india.webp?b=1&s=170667a&w=0&k=20&c=UjcYMWWoUIwVngGC5wIxaR3HDsAWdJ2cjsGmHEVkmjs=" alt="Slide 2">
     </div>
+
     <div class="item third-slide active">
-      <img src="slide3.jpg" alt="Third Slide">
+      <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D" alt="Slide 3">
     </div>
+
     <div class="item fourth-slide">
-      <img src="slide4.jpg" alt="Fourth Slide">
+      <img src="https://media.istockphoto.com/id/1943559871/photo/beautiful-landscape-seen-from-mardi-himal-viewpoint-one-of-popular-trekking-route-in-nepal.webp?b=1&s=170667a&w=0&k=20&c=rcwc58YKl_gjSP9072lRaShl0dbYmfLmaF1y_QXgRKc=" alt="Slide 4">
     </div>
+
     <div class="item fifth-slide">
-      <img src="slide5.jpg" alt="Fifth Slide">
+      <img src="https://media.istockphoto.com/id/1341288649/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.webp?b=1&s=170667a&w=0&k=20&c=4NKz9veFo5-po92H0ZQ1FGoxMec7DaBPsaj9dZvp9rE=" alt="Slide 5">
     </div>
   </div>
 
@@ -39,6 +47,17 @@
   </a>
 
 </div>
+
+<script>
+  $(document).ready(function(){
+    // Activate the third slide on page load
+    $('#myCarousel').carousel({
+      interval: false  // Remove auto-slide functionality
+    }).on('slide.bs.carousel', function () {
+      // Do something when slide event occurs (if needed)
+    });
+  });
+</script>
 
 </body>
 </html>
